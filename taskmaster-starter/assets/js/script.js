@@ -13,10 +13,7 @@ var createTask = function(taskText, taskDate, taskList) {
   // append span and p element to parent li
   taskLi.append(taskSpan, taskP);
 
-<<<<<<< HEAD
 
-=======
->>>>>>> feature/form-submit
   // append to ul list on the page
   $("#list-" + taskList).append(taskLi);
 };
@@ -48,12 +45,9 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> feature/form-submit
 // modal was triggered
 $("#task-form-modal").on("show.bs.modal", function() {
   // clear values
@@ -172,11 +166,8 @@ $(".list-group").on("blur", "input[type='text']", function() {
   var taskSpan = $("<span>")
     .addClass("badge badge-primary badge-pill")
     .text(date);
-<<<<<<< HEAD
     $(this).replaceWith(taskSpan);
-=======
   $(this).replaceWith(taskSpan);
->>>>>>> feature/form-submit
 });
 
 // remove all tasks
@@ -189,8 +180,5 @@ $("#remove-tasks").on("click", function() {
 });
 
 // load tasks for the first time
-<<<<<<< HEAD
 loadTasks();
-=======
 loadTasks();
->>>>>>> feature/form-submit
